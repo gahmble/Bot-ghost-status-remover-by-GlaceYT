@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["PLAYING","MUSIC"];
+const statusMessages = ["**CURATING DISCORD SERVERS**"];
 
 
 let currentIndex = 0;
