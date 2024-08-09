@@ -32,11 +32,11 @@ app.get('/', (req, res) => {
 });
 app.listen(port, () => {
   console.log(`🔗 Listening to RTX: http://localhost:${port}`);
-  console.log(`🔗 Powered B‍y RTX`);
+  console.log(`🔗 Powered By RTX`);
 });
 
 
-const statusMessages =["Scale Your Server"];
+const statusMessages = ["Scale Your Server"];
 
 
 let currentIndex = 0;
@@ -73,7 +73,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.WATCHING}],
+    activities: [{ name: currentStatus, type: ActivityType.PLAYING}],
     status: 'dnd',
   });
 
@@ -98,7 +98,7 @@ client.once('ready', () => {
 
   setInterval(() => {
     updateStatusAndSendMessages();
-  }, 10000000000000000000000000000000);
+  }, 10000);
 });
 
 login();
