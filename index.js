@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages =["Curating **Discord Servers**"];
+const statusMessages =["Curating Discord Servers"];
 
 
 let currentIndex = 0;
