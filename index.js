@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages =["WATCHING PERCENTIFY"];
+const statusMessages =["WATCHING SCALEYOURSERVER"];
 
 
 let currentIndex = 0;
