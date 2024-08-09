@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages =["Discord Servers"];
+const statusMessages =["WATCHING PERCENTIFY"];
 
 
 let currentIndex = 0;
@@ -73,7 +73,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.WATCHING}],
+    activities: [{ name: currentStatus, type: ActivityType.CUSTOM}],
     status: 'dnd',
   });
 
