@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Scale Your Server"];
+const statusMessages = ["Watching Scale Your Server"];
 
 
 let currentIndex = 0;
@@ -73,7 +73,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.PLAYING}],
+    activities: [{ name: currentStatus, type: ActivityType.CUSTOM}],
     status: 'dnd',
   });
 
