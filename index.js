@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Watching Scale Your Server"];
+const statusMessages = ["Scale Your Server"];
 
 
 let currentIndex = 0;
